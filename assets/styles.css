@@ -1,0 +1,18 @@
+body {
+    font-family: monospace;
+    color: goldenrod;
+    background-image: linear-gradient(to right, white, black);
+}
+
+button {
+    border: 5px, solid, greenyellow;
+    border-radius: 25%;
+    background-color: aqua;
+}
+
+button:hover {
+    border: none;
+    border-radius: 15%;
+    background-color: blue;
+    color: goldenrod;
+}
