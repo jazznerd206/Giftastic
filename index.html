@@ -10,14 +10,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Reaction Gif Loader</title>
 </head>
 <body>
-    
+    <!-- BOOTSTRAP NAV BAR (page reload, add button input field) -->
+    <nav class="navbar navbar-light bg-light justify-content-center">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" id="searchField" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" id="searchButton" type="submit">Search</button>
+        </form>
+    </nav>
+
+
+    <!-- CONTAINER FOR RECEIVING GIFS -->
+    <div class="container" id="gifReceiver"></div>
 
 
 
+    <!-- CLEAR LAST/ALL BUTTONS -->
+    <button id="clearLast">Clear Last 10</button>
+    <button id="clearAll">Clear All</button>
 
+
+
+    <!-- FOOTER WITH RELEVANT INFO -->
+    <div class="footer">COPYRIGHT ALM CONSULTING 2019</div>
 
 
 
