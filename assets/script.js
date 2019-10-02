@@ -3,14 +3,11 @@ var topics = ['happy', 'sad', 'angry', 'jealousy', 'joy', 'disgust', 'surprise',
 
 //============================================================================================
 
-
 //document ready function
 $(document).ready(function() {
     console.log('document ready');
     buttonGenerate(topics);
     addButton();
-});
-$(document).ready(function() {
     topicButtonClick();
 })
 
@@ -55,6 +52,24 @@ function topicButtonClick() {
             method: "GET"
         }).then(function(response) {
             console.log(response);
+            var gifIncoming = response.data;
+            for (let i = 0; i < gifIncoming.length; i++) {
+            var gifImp = $('<div>');
+            var gifPlace = $('<img>');
+            var rating = $('<h3>');
+            gifPlace.attr('src', gifIncoming[i].images.fixed_height_still.url);
+            gifPlace.attr('data-still', gifIncoming[i].images.fixed_height_still.url);
+            gifPlace.attr('data-state', 'still');
+            gifPlace.addClass('gif');
+            gifPlace.attr('data-animate', gifIncoming[i].images.fixed_height.url);
+            gifImp.append(gifPlace);
+            $('#gifReceiver').append(gifImp);
+            }
         });
     });
+}
+
+//function dump gifs to DOM
+function importGif() {
+    
 }
