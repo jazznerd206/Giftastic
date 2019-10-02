@@ -57,12 +57,13 @@ function topicButtonClick() {
             for (let i = 0; i < gifIncoming.length; i++) {
             var gifImp = $('<div>');
             var gifPlace = $('<img>');
-            var rating = $("<p class='rating'>").text("Rating: " + gifIncoming[i].rating);
+            var rating = $("<h3 class='rating'>").text("Rating: " + gifIncoming[i].rating);
             gifPlace.attr('src', gifIncoming[i].images.fixed_height_still.url);
             gifPlace.attr('data-still', gifIncoming[i].images.fixed_height_still.url);
             gifPlace.attr('data-animate', gifIncoming[i].images.fixed_height.url);
             gifPlace.attr('data-state', 'still');
-            gifPlace.addClass('gif');
+            gifPlace.addClass('stateChange');
+            gifImp.addClass('gif');
             rating.attr('src', gifIncoming[i].images.rating);
             //console.log("rating is " + rating)
             gifImp.prepend(rating);
@@ -75,7 +76,7 @@ function topicButtonClick() {
 
 //function to change state of gif
 function changeState() {
-    $(document).on('click', '.gif', function(){
+    $(document).on('click', '.stateChange', function(){
         var state = $(this).attr('data-state');
         console.log(this, "been clicked");
             if (state == 'still') {
