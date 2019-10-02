@@ -4,6 +4,12 @@ body {
     background-image: linear-gradient(to right, white, black);
 }
 
+#footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
 button {
     border: 5px, solid, greenyellow;
     border-radius: 25%;
@@ -15,4 +21,13 @@ button:hover {
     border-radius: 15%;
     background-color: blue;
     color: goldenrod;
+}
+
+.gif {
+    display: inline-block;
+    margin: 0, auto;
+}
+
+.rating {
+    color: black;
 }

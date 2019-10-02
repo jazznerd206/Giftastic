@@ -57,7 +57,7 @@ function topicButtonClick() {
             for (let i = 0; i < gifIncoming.length; i++) {
             var gifImp = $('<div>');
             var gifPlace = $('<img>');
-            var rating = $('<h3>');
+            var rating = $("<p class='rating'>").text("Rating: " + gifIncoming[i].rating);
             gifPlace.attr('src', gifIncoming[i].images.fixed_height_still.url);
             gifPlace.attr('data-still', gifIncoming[i].images.fixed_height_still.url);
             gifPlace.attr('data-animate', gifIncoming[i].images.fixed_height.url);
@@ -65,7 +65,7 @@ function topicButtonClick() {
             gifPlace.addClass('gif');
             rating.attr('src', gifIncoming[i].images.rating);
             //console.log("rating is " + rating)
-            gifPlace.prepend(rating);
+            gifImp.prepend(rating);
             gifImp.append(gifPlace);
             $('#gifReceiver').append(gifImp);
             }
