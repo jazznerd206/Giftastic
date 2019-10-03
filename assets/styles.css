@@ -13,7 +13,7 @@ body {
 }
 
 button {
-    border: 5px, solid, greenyellow;
+    border: 30px, solid, greenyellow;
     border-radius: 25%;
     background-color: aqua;
 }
