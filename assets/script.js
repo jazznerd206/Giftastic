@@ -68,7 +68,7 @@ function topicButtonClick() {
             //console.log("rating is " + rating)
             gifImp.prepend(rating);
             gifImp.append(gifPlace);
-            $('#gifReceiver').append(gifImp);
+            $('#gifReceiver').prepend(gifImp);
             }
         });
     });
