@@ -2,10 +2,12 @@ body {
     font-family: monospace;
     color: goldenrod;
     background-image: linear-gradient(to right, white, black);
+    height: 100%;
+    width: 100%;
 }
 
 #footer {
-    position: static;
+    position: absolute;
     bottom: 0;
     text-align: center;
 }

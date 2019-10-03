@@ -10,6 +10,7 @@ $(document).ready(function() {
     addButton();
     topicButtonClick();
     changeState();
+    clearButton();
 })
 
 //============================================================================================
@@ -87,4 +88,13 @@ function changeState() {
                 $(this).attr('data-state', 'still');
             };
     });
+}
+
+
+//clear button
+function clearButton() {
+    $(document).on('click', '#clearButton', function(event) {
+        event.preventDefault();
+        $('#gifReceiver').empty();
+    })
 }
