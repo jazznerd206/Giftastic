@@ -6,6 +6,10 @@ body {
     width: 100%;
 }
 
+.navbar {
+    background-image: linear-gradient((to left, white, black));
+}
+
 #footer {
     position: absolute;
     bottom: 0;
@@ -13,16 +17,23 @@ body {
 }
 
 button {
-    border: 30px, solid, greenyellow;
+    border: 5px, solid, greenyellow;
     border-radius: 25%;
     background-color: aqua;
 }
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
 button:hover {
     border: none;
     border-radius: 15%;
     background-color: blue;
     color: goldenrod;
+    transform: skew(-10deg);
 }
 
 .gif {
@@ -33,4 +44,9 @@ button:hover {
 
 .rating {
     color: black;
+}
+
+#topMessage {
+    font-size: 5rem;
+
 }
