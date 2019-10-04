@@ -11,7 +11,7 @@ body {
 }
 
 #footer {
-    position: absolute;
+    position: static;
     bottom: 0;
     text-align: center;
 }
@@ -44,9 +44,4 @@ button:hover {
 
 .rating {
     color: black;
-}
-
-#topMessage {
-    font-size: 5rem;
-
 }

@@ -90,7 +90,6 @@ function changeState() {
     });
 }
 
-
 //clear button
 function clearButton() {
     $(document).on('click', '#clearButton', function(event) {
